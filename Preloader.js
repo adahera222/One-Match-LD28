@@ -25,9 +25,9 @@ OneMatch.Preloader.prototype = {
 		this.load.image('menuBg', 'assets/menu.png');
 		this.load.image('winBg', 'assets/winBg.png');
 		this.load.image('level', 'assets/level.png');
-		this.load.audio('gamemusic', ['assets/audio/gamemusic.wav']);
-		this.load.audio('menumusic', ['assets/audio/menumusic.wav']);
-		this.load.audio('winmusic', ['assets/audio/winmusic.wav']);
+		this.load.audio('gamemusic', ['assets/audio/gamemusic.ogg']);
+		this.load.audio('menumusic', ['assets/audio/menumusic.ogg']);
+		this.load.audio('winmusic', ['assets/audio/winmusic.ogg']);
 
 	},
 
