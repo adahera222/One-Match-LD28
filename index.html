@@ -17,15 +17,43 @@
 	<script src="Win.js"></script>
     <style>
         * { margin: 0; }
+        body { background: #111;}
+        canvas { margin: 100px auto 20px;}
+        #social { margin: 0 auto; width: 620px; padding: 10px;}
     </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=228733347152723";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="game"></div>
 <script type="text/javascript">
 window.onload = function() {
-	var game = new Phaser.Game(640, 360, Phaser.AUTO, '');
+	var game = new Phaser.Game(640, 360, Phaser.AUTO, 'game');
 	game.state.add('Boot', OneMatch.Boot);
 	game.state.start('Boot');
 };
 </script>
+<div id="social">
+	<a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-via="twitterapi">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+	<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
 </body>
 </html>
