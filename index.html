@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>One Match for Ludum Dare #28</title>
+	<meta name="description" content="One match left to start a fire. You Only Get One - game for LD48 by Tanner">
+	<meta name="author" content="Tanner">
+	<meta property="og:title" content="One Match for Ludum Dare #28">
+    <meta property="og:image" content="http://tanner963.github.io/one-match-ld28/assets/primaryshot.png">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="One match left to start a fire. You Only Get One - game for LD48 by Tanner">
+	<script src="phaser.min.js"></script>
+	<script src="Boot.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="MainMenu.js"></script>
+	<script src="Game.js"></script>
+	<script src="Win.js"></script>
+    <style>
+        * { margin: 0; }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+window.onload = function() {
+	var game = new Phaser.Game(640, 360, Phaser.AUTO, '');
+	game.state.add('Boot', OneMatch.Boot);
+	game.state.start('Boot');
+};
+</script>
+</body>
+</html>

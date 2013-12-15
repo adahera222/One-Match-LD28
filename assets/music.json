@@ -1,0 +1,28 @@
+{
+"frames": [
+	{
+		"filename": "musicIn",
+		"frame": {"x":0, "y":0, "w":30, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	{
+		"filename": "musicOff",
+		"frame": {"x":0, "y":31, "w":30, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	{
+		"filename": "musicOn",
+		"frame": {"x":31, "y":0, "w":30, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	}
+
+],
+"meta": {
+	"image": "music.png",
+	"size": {"w": 62, "h": 62},
+	"scale": "1"
+}
+}
