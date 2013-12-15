@@ -1,59 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="One-match-ld28 : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>One-match-ld28</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Tanner963/One-Match-LD28">View on GitHub</a>
-
-          <h1 id="project_title">One-match-ld28</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Tanner963/One-Match-LD28/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Tanner963/One-Match-LD28/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">One-match-ld28 maintained by <a href="https://github.com/Tanner963">Tanner963</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-46474808-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<title>One Match for Ludum Dare #28</title>
+	<meta name="description" content="One match left to start a fire. You Only Get One - game for LD48 by Tanner">
+	<meta name="author" content="Tanner">
+	<meta property="og:title" content="One Match for Ludum Dare #28">
+    <meta property="og:image" content="http://tanner963.github.io/One-Match-LD28/assets/primaryshot.png" >
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="One match left to start a fire. You Only Get One - game for LD48 by Tanner">
+	<script src="phaser.min.js"></script>
+	<script src="Boot.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="MainMenu.js"></script>
+	<script src="Game.js"></script>
+	<script src="Win.js"></script>
+    <style>
+        * { margin: 0; }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+window.onload = function() {
+	var game = new Phaser.Game(640, 360, Phaser.AUTO, '');
+	game.state.add('Boot', OneMatch.Boot);
+	game.state.start('Boot');
+};
+</script>
+</body>
 </html>

@@ -1,0 +1,22 @@
+{
+"frames": [
+	{
+		"filename": "playIn",
+		"frame": {"x":0, "y":0, "w":280, "h":105},
+		"spriteSourceSize": {"x":0,"y":0,"w":280,"h":105},
+		"sourceSize": {"w":280,"h":105}
+	},
+	{
+		"filename": "playOut",
+		"frame": {"x":0, "y":106, "w":280, "h":105},
+		"spriteSourceSize": {"x":0,"y":0,"w":280,"h":105},
+		"sourceSize": {"w":280,"h":105}
+	}
+
+],
+"meta": {
+	"image": "playBtn.png",
+	"size": {"w": 281, "h": 212},
+	"scale": "1"
+}
+}
